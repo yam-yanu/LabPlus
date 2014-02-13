@@ -1,0 +1,1034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script
+       src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"
+       type="text/javascript"
+        ></script>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<link rel=stylesheet href="style1.css" type="text/css">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>lab view</title>
+
+
+
+</head>
+
+<script type="text/javascript"><!--
+
+
+$(function(){//コメント�E琁E
+
+ $.ajax({
+                url: "data" + 2 + ".csv",    // ファイル吁E
+                success: function(result){
+			
+                    // 引数『result』を取る無名関数
+                    // 『result』には取得した文字�Eが格納されてぁE��
+			line = result.split("\n "); //行�E割　a,aa\nb,bb\nc,cc -> a,aa b,bb c,cc
+			apr1 = line[0].split(","); //要素刁E��　a,aa-> a aa 大乁E���E甁E
+			apr2 = line[1].split(","); //要素刁E��　a,aa-> a aa 藤井�E輩
+			apr3 = line[2].split(","); //要素刁E��　a,aa-> a aa 信田先輩
+			apr4 = line[3].split(","); //要素刁E��　a,aa-> a aa 小畠さん
+			apr5 = line[4].split(","); //要素刁E��　a,aa-> a aa //辻井さめE
+			apr6 = line[5].split(","); //要素刁E��　a,aa-> a aa //矢野君
+			apr7 = line[6].split(","); //要素刁E��　a,aa-> a aa //村本吁E
+			apr8 = line[7].split(","); //要素刁E��　a,aa-> a aa //小寺吁E
+			apr9 = line[8].split(","); //要素刁E��　a,aa-> a aa //今�E吁E
+			apr10 = line[9].split(","); //要素刁E��　a,aa-> a aa //山下�E輩
+			apr11 = line[10].split(","); //要素刁E��　a,aa-> a aa //石川�E輩
+			apr12 = line[11].split(","); //要素刁E��　a,aa-> a aa //北原
+			apr13 = line[12].split(","); //要素刁E��　a,aa-> a aa //	米重�E輩
+			apr14 = line[13].split(","); //要素刁E��　a,aa-> a aa //山田吁E
+			apr15 = line[14].split(","); //要素刁E��　a,aa-> a aa //田村�E輩
+			apr16 = line[15].split(","); //要素刁E��　a,aa-> a aa //渡辺先輩
+			apr17 = line[16].split(","); //要素刁E��　a,aa-> a aa //坂井�E輩
+			apr18 = line[17].split(","); //要素刁E��　a,aa-> a aa //野村先輩
+			
+			window.exsistcomment_ookubo=apr1[3];//大乁E��　コメンチE
+			window.exsistcomment_fujii=apr2[3];//藤井　コメンチE
+			window.exsistcomment_nobuta=apr3[3];//信田　コメンチE
+                        window.exsistcomment_kobatake=apr4[3];//小畠　コメンチE
+                        window.exsistcomment_tsujii=apr5[3];//辻井　コメンチE
+                        window.exsistcomment_yano=apr6[3];//矢野　コメンチE
+                        window.exsistcomment_muramoto=apr7[3];//村本　コメンチE
+                        window.exsistcomment_kotera=apr8[3];//小寺　コメンチE
+                        window.exsistcomment_imairi=apr9[3];//今�E　コメンチE
+                        window.exsistcomment_yamashita=apr10[3];//山下　コメンチE
+                        window.exsistcomment_ishikawa=apr11[3];//石川　コメンチE
+                        window.exsistcomment_kitahara=apr12[3];//北原　コメンチE
+                        window.exsistcomment_yoneshige=apr13[3];//米重　コメンチE
+                        window.exsistcomment_yamada=apr14[3];//山田　コメンチE
+                        window.exsistcomment_tamura=apr15[3];//田村　コメンチE
+                        window.exsistcomment_watanabe=apr16[3];//渡辺　コメンチE
+                        window.exsistcomment_sakai=apr17[3];//坂井　コメンチE
+                        window.exsistcomment_nomura=apr18[3];//野村　コメンチE
+
+
+	$("#img_id_kobatake").hover(  
+	function(){ 
+	$("p#str_kobatake").text(exsistcomment_kobatake);
+	$("p#str_kobatake").attr("class", "kobatake_p text-area") },function(){ $("p#str_kobatake").attr("class", "hide") } ); 
+
+	$("#img_id_ookubo").hover(  
+	function(){ 
+	$("p#str_ookubo").text(exsistcomment_ookubo);
+	$("p#str_ookubo").attr("class", "ookubo_p text-area") },function(){ $("p#str_ookubo").attr("class", "hide") } ); 
+
+	$("#img_id_fujii").hover(  
+	function(){ 
+	$("p#str_fujii").text(exsistcomment_fujii);
+	$("p#str_fujii").attr("class", "fujii_p text-area") },function(){ $("p#str_fujii").attr("class", "hide") } ); 
+
+	$("#img_id_nobuta").hover(  
+	function(){ 
+	$("p#str_nobuta").text(exsistcomment_nobuta);
+	$("p#str_nobuta").attr("class", "nobuta_p text-area") },function(){ $("p#str_nobuta").attr("class", "hide") } );
+
+	$("#img_id_tsujii").hover(  
+	function(){ 
+	$("p#str_tsujii").text(exsistcomment_tsujii);
+	$("p#str_tsujii").attr("class", "tsujii_p text-area") },function(){ $("p#str_tsujii").attr("class", "hide") } ); 
+
+	$("#img_id_yano").hover(  
+	function(){ 
+	$("p#str_yano").text(exsistcomment_yano);
+	$("p#str_yano").attr("class", "yano_p text-area") },function(){ $("p#str_yano").attr("class", "hide") } );
+
+	$("#img_id_muramoto").hover(  
+	function(){ 
+	$("p#str_muramoto").text(exsistcomment_muramoto);
+	$("p#str_muramoto").attr("class", "muramoto_p text-area") },function(){ $("p#str_muramoto").attr("class", "hide") } ); 
+
+	$("#img_id_kotera").hover(  
+	function(){ 
+	$("p#str_kotera").text(exsistcomment_kotera);
+	$("p#str_kotera").attr("class", "kotera_p text-area") },function(){ $("p#str_kotera").attr("class", "hide") } );
+
+	$("#img_id_imairi").hover(  
+	function(){ 
+	$("p#str_imairi").text(exsistcomment_imairi);
+	$("p#str_imairi").attr("class", "imairi_p text-area") },function(){ $("p#str_imairi").attr("class", "hide") } );
+
+	$("#img_id_yamashita").hover(  
+	function(){ 
+	$("p#str_yamashita").text(exsistcomment_yamashita);
+	$("p#str_yamashita").attr("class", "yamashita_p text-area") },function(){ $("p#str_yamashita").attr("class", "hide") } ); 
+
+	$("#img_id_ishikawa").hover(  
+	function(){ 
+	$("p#str_ishikawa").text(exsistcomment_ishikawa);
+	$("p#str_ishikawa").attr("class", "ishikawa_p text-area") },function(){ $("p#str_ishikawa").attr("class", "hide") } );
+
+	$("#img_id_kitahara").hover(  
+	function(){ 
+	$("p#str_kitahara").text(exsistcomment_kitahara);
+	$("p#str_kitahara").attr("class", "kitahara_p text-area") },function(){ $("p#str_kitahara").attr("class", "hide") } );
+
+	$("#img_id_yoneshige").hover(  
+	function(){ 
+	$("p#str_yoneshige").text(exsistcomment_yoneshige);
+	$("p#str_yoneshige").attr("class", "yoneshige_p text-area") },function(){ $("p#str_yoneshige").attr("class", "hide") } ); 
+
+	$("#img_id_yamada").hover(  
+	function(){ 
+	$("p#str_yamada").text(exsistcomment_yamada);
+	$("p#str_yamada").attr("class", "yamada_p text-area") },function(){ $("p#str_yamada").attr("class", "hide") } );
+
+	$("#img_id_tamura").hover(  
+	function(){ 
+	$("p#str_tamura").text(exsistcomment_tamura);
+	$("p#str_tamura").attr("class", "tamura_p text-area") },function(){ $("p#str_tamura").attr("class", "hide") } );
+
+	$("#img_id_watanabe").hover(  
+	function(){ 
+	$("p#str_watanabe").text(exsistcomment_watanabe);
+	$("p#str_watanabe").attr("class", "watanabe_p text-area") },function(){ $("p#str_watanabe").attr("class", "hide") } );
+
+	$("#img_id_sakai").hover(  
+	function(){ 
+	$("p#str_sakai").text(exsistcomment_sakai);
+	$("p#str_sakai").attr("class", "sakai_p text-area") },function(){ $("p#str_sakai").attr("class", "hide") } ); 
+
+	$("#img_id_nomura").hover(  
+	function(){ 
+	$("p#str_nomura").text(exsistcomment_nomura);
+	$("p#str_nomura").attr("class", "nomura_p text-area") },function(){ $("p#str_nomura").attr("class", "hide") } );
+
+
+
+                
+		}//success	
+            });//ajax
+
+})
+
+
+ function hyou(no) {
+            // 『jQuery』�E『ajax()』メソチE��
+            // 引数は『{url:ファイルのパス, success:終亁E���E処琁E�E関数}』�E連想配�E
+
+            $.ajax({
+                url: "data" + 2 + ".csv",    // ファイル吁E
+                success: function(result){
+			
+                    // 引数『result』を取る無名関数
+                    // 『result』には取得した�E�E���Eが格納されてぁE��
+			line = result.split("\n "); //行�E割　a,aa\nb,bb\nc,cc -> a,aa b,bb c,cc
+			apr1 = line[0].split(","); //要素刁E��　a,aa-> a aa //大乁E���E甁E
+			apr2 = line[1].split(","); //要素刁E��　a,aa-> a aa //藤井�E輩
+			apr3 = line[2].split(","); //要素刁E��　a,aa-> a aa //信田先輩
+			apr4 = line[3].split(","); //要素刁E��　a,aa-> a aa //小畠さん
+			apr5 = line[4].split(","); //要素刁E��　a,aa-> a aa //辻井さめE
+			apr6 = line[5].split(","); //要素刁E��　a,aa-> a aa //矢野君
+			apr7 = line[6].split(","); //要素刁E��　a,aa-> a aa //村本吁E
+			apr8 = line[7].split(","); //要素刁E��　a,aa-> a aa //小寺吁E
+			apr9 = line[8].split(","); //要素刁E��　a,aa-> a aa //今�E吁E
+			apr10 = line[9].split(","); //要素刁E��　a,aa-> a aa //山下�E輩
+			apr11 = line[10].split(","); //要素刁E��　a,aa-> a aa //石川�E輩
+			apr12 = line[11].split(","); //要素刁E��　a,aa-> a aa //北原
+			apr13 = line[12].split(","); //要素刁E��　a,aa-> a aa //	米重�E輩
+			apr14 = line[13].split(","); //要素刁E��　a,aa-> a aa //山田吁E
+			apr15 = line[14].split(","); //要素刁E��　a,aa-> a aa //田村�E輩
+			apr16 = line[15].split(","); //要素刁E��　a,aa-> a aa //渡辺先輩
+			apr17 = line[16].split(","); //要素刁E��　a,aa-> a aa //坂井�E輩
+			apr18 = line[17].split(","); //要素刁E��　a,aa-> a aa //野村先輩
+
+			window.exsistroom_ookubo=apr1[1];//大乁E��E部屋番号
+			window.exsistroom_fujii=apr2[1];//藤井　部屋番号
+			window.exsistroom_nobuta=apr3[1];//信田　部屋番号
+                        window.exsistroom_kobatake=apr4[1];//小畠　部屋番号
+                        window.exsistroom_tsujii=apr5[1];//辻井　部屋番号
+                        window.exsistroom_yano=apr6[1];//矢野　部屋番号
+                        window.exsistroom_muramoto=apr7[1];//村本　部屋番号
+                        window.exsistroom_kotera=apr8[1];//小寺　部屋番号
+                        window.exsistroom_imairi=apr9[1];//今�E　部屋番号
+                        window.exsistroom_yamashita=apr10[1];//山下　部屋番号
+                        window.exsistroom_ishikawa=apr11[1];//石川　部屋番号
+                        window.exsistroom_kitahara=apr12[1];//北原　部屋番号
+                        window.exsistroom_yoneshige=apr13[1];//米重　部屋番号
+                        window.exsistroom_yamada=apr14[1];//山田　部屋番号
+                        window.exsistroom_tamura=apr15[1];//田村　部屋番号
+                        window.exsistroom_watanabe=apr16[1];//渡辺　部屋番号
+                        window.exsistroom_sakai=apr17[1];//坂井　部屋番号
+                        window.exsistroom_nomura=apr18[1];//野村　部屋番号
+
+			window.exsiststatus_ookubo=apr1[2];//大乁E��　スチE�Eタス
+			window.exsiststatus_fujii=apr2[2];//藤井　スチE�Eタス
+			window.exsiststatus_nobuta=apr3[2];//信田　スチE�Eタス
+                        window.exsiststatus_kobatake=apr4[2];//小畠　スチE�Eタス
+                        window.exsiststatus_tsujii=apr5[2];//辻井　スチE�Eタス
+                        window.exsiststatus_yano=apr6[2];//矢野　スチE�Eタス
+                        window.exsiststatus_muramoto=apr7[2];//村本　スチE�Eタス
+                        window.exsiststatus_kotera=apr8[2];//小寺　スチE�Eタス
+                        window.exsiststatus_imairi=apr9[2];//今�E　スチE�Eタス
+                        window.exsiststatus_yamashita=apr10[2];//山下　スチE�Eタス
+                        window.exsiststatus_ishikawa=apr11[2];//石川　スチE�Eタス
+                        window.exsiststatus_kitahara=apr12[2];//北原　スチE�Eタス
+                        window.exsiststatus_yoneshige=apr13[2];//米重　スチE�Eタス
+                        window.exsiststatus_yamada=apr14[2];//山田　スチE�Eタス
+                        window.exsiststatus_tamura=apr15[2];//田村　スチE�Eタス
+                        window.exsiststatus_watanabe=apr16[2];//渡辺　スチE�Eタス
+                        window.exsiststatus_sakai=apr17[2];//坂井　スチE�Eタス
+                        window.exsiststatus_nomura=apr18[2];//野村　スチE�Eタス
+
+
+          if(no==1){//さちこ�Eタンが押された時の処琁E
+			$("#back_kari,#back_l,#back_204,#back_n,#deskb_p,#deskf_p,#back_i").attr("class","hide");//背景削除
+
+			$("#back_s").attr("class","back_g");//さちこ�E背景表示
+		
+			$("#img_id_kobatake,#img_id_fujii,#img_id_imairi,#img_id_yamashita,#img_id_yoneshige,#img_id_yamada,#img_id_tamura,#img_id_sakai,#img_id_nomura,#img_id_ishikawa").attr("class","hide");
+			//人物消去
+
+			$("#kobatake_s,#kobatake_s2,#ookubo_s,#ookubo_s2,#fujii_s,#fujii_s2,#nobuta_s,#nobuta_s2,#tsujii_s,#tsujii_s2,#yano_s,#yano_s2").attr("class","hide");
+
+			$("#muramoto_s,#muramoto_s2,#kotera_s,#kotera_s2,#imairi_s,#imairi_s2,#yamashita_s,#yamashita_s2,#ishikawa_s,#ishikawa_s2,#kitahara_s,#kitahara_s2").attr("class","hide");
+
+			$("#yoneshige_s,#yoneshige_s2,#yamada_s,#yamada_s2,#tamura_s,#tamura_s2,#watanabe_s,#watanabe_s2,#sakai_s,#sakai_s2").attr("class","hide");
+			//スチE�Eタス消去	
+
+		document.bgColor = "#000000";
+		
+
+		if(exsistroom_ookubo==0 || exsistroom_ookubo==1){
+
+			if(exsiststatus_ookubo==0){$("#ookubo_s").attr("class","ookubo_s");}
+			else if(exsiststatus_ookubo==2){$("#ookubo_s2").attr("class","ookubo_s");}			
+			$("#img_id_ookubo").attr("class","ookubo_p");
+		
+		}else{$("#img_id_ookubo").attr("class","hide");}
+		
+		
+		if(exsistroom_nobuta==0 || exsistroom_nobuta==1){
+
+			if(exsiststatus_nobuta==0){$("#nobuta_s").attr("class","nobuta_s");}
+			else if(exsiststatus_nobuta==2){$("#nobuta_s2").attr("class","nobuta_s");}
+			
+			$("#img_id_nobuta").attr("class","nobuta_p");
+		
+		}else{$("#img_id_nobuta").attr("class","hide");}
+		
+		if(exsistroom_tsujii==0 || exsistroom_tsujii==1){
+
+			if(exsiststatus_tsujii==0){$("#tsujii_s").attr("class","tsujii_s");}
+			else if(exsiststatus_tsujii==2){$("#tsujii_s2").attr("class","tsujii_s");}
+			
+			$("#img_id_tsujii").attr("class","tsujii_p");
+		
+		}else{$("#img_id_tsujii").attr("class","hide");}
+
+
+		if(exsistroom_yano==0 || exsistroom_yano==1){
+
+			if(exsiststatus_yano==0){$("#yano_s").attr("class","yano_s");}
+			else if(exsiststatus_yano==2){$("#tsujii_s2").attr("class","yano_s");}
+			
+			$("#img_id_yano").attr("class","yano_p");
+		
+		}else{$("#img_id_yano").attr("class","hide");}
+
+
+		if(exsistroom_muramoto==0 || exsistroom_muramoto==1){
+
+			if(exsiststatus_muramoto==0){$("#muramoto_s").attr("class","muramoto_s");}
+			else if(exsiststatus_muramoto==2){$("#muramoto_s2").attr("class","muramoto_s");}
+			
+			$("#img_id_muramoto").attr("class","muramoto_p");
+		
+		}else{$("#img_id_muramoto").attr("class","hide");}
+
+
+		if(exsistroom_kotera==0 || exsistroom_kotera==1){
+
+			if(exsiststatus_kotera==0){$("#kotera_s").attr("class","kotera_s");}
+			else if(exsiststatus_kotera==2){$("#kotera_s2").attr("class","kotera_s");}
+			
+			$("#img_id_kotera").attr("class","kotera_p");
+
+		}else{$("#img_id_kotera").attr("class","hide");}
+
+
+		if(exsistroom_kitahara==0 || exsistroom_kitahara==1){
+
+			if(exsiststatus_kitahara==0){$("#kitahara_s").attr("class","kitahara_s");}
+			else if(exsiststatus_kitahara==2){$("#kitahara_s2").attr("class","kitahara_s");}
+			
+			$("#img_id_kitahara").attr("class","kitahara_p");
+		
+		}else{$("#img_id_kitahara").attr("class","hide");}
+
+		if(exsistroom_watanabe==0 || exsistroom_watanabe==1){
+
+			if(exsiststatus_watanabe==0){$("#watanabe_s").attr("class","watanabe_s");}
+			else if(exsiststatus_watanabe==2){$("#watanabe_s2").attr("class","watanabe_s");}
+			
+			$("#img_id_watanabe").attr("class","watanabe_p");
+		
+		}else{$("#img_id_watanabe").attr("class","hide");}
+		
+
+	 }//さちこここまで
+               
+
+	 if(no==2){//研究室ボタンが押された時の処琁E
+
+		$("#back_kari,#back_i,#back_s,#back_204,#back_n").attr("class","hide");//背景を消去
+
+		$("#back_l").attr("class","back_g");//研究室の背景表示
+		$("#deskb_p").attr("class","deskb_p");//机の背景表示
+		$("#deskf_p").attr("class","deskf_p");//机の背景表示
+
+
+		$("#kobatake_s,#kobatake_s2,#ookubo_s,#ookubo_s2,#fujii_s,#fujii_s2,#nobuta_s,#nobuta_s2,#tsujii_s,#tsujii_s2,#yano_s,#yano_s2").attr("class","hide");
+
+		$("#muramoto_s,#muramoto_s2,#kotera_s,#kotera_s2,#imairi_s,#imairi_s2,#yamashita_s,#yamashita_s2,#ishikawa_s,#ishikawa_s2,#kitahara_s,#kitahara_s2").attr("class","hide");
+
+		$("#yoneshige_s,#yoneshige_s2,#yamada_s,#yamada_s2,#tamura_s,#tamura_s2,#watanabe_s,#watanabe_s2,#sakai_s,#sakai_s2").attr("class","hide");
+			//スチE�Eタス消去
+
+
+		document.bgColor = "#000000";
+
+		if(exsistroom_kobatake==0){//
+
+			if(exsiststatus_kobatake==0){$("#kobatake_s").attr("class","kobatake_s");}
+			else if(exsiststatus_kobatake==2){$("#kobatake_s2").attr("class","kobatake_s");}
+
+			$("#img_id_kobatake").attr("class","kobatake_p");
+
+		}else{$("#img_id_kobatake").attr("class","hide");}
+
+
+		if(exsistroom_ookubo==0){
+
+
+			if(exsiststatus_ookubo==0){$("#ookubo_s").attr("class","ookubo_s");}
+			else if(exsiststatus_ookubo==2){$("#ookubo_s2").attr("class","ookubo_s");}			
+			$("#img_id_ookubo").attr("class","ookubo_p");
+		
+		}else{$("#img_id_ookubo").attr("class","hide");}
+
+		
+		if(exsistroom_fujii==0){
+
+			if(exsiststatus_fujii==0){$("#fujii_s").attr("class","fujii_s");}
+			else if(exsiststatus_fujii==2){$("#fujii_s2").attr("class","fujii_s");}
+			
+			$("#img_id_fujii").attr("class","fujii_p");
+		
+		}else{$("#img_id_fujii").attr("class","hide");}
+
+
+		if(exsistroom_nobuta==0){
+
+			if(exsiststatus_nobuta==0){$("#nobuta_s").attr("class","nobuta_s");}
+			else if(exsiststatus_nobuta==2){$("#nobuta_s2").attr("class","nobuta_s");}
+			
+			$("#img_id_nobuta").attr("class","nobuta_p");
+		
+		}else{$("#img_id_nobuta").attr("class","hide");}
+
+
+		if(exsistroom_tsujii==0){
+
+			if(exsiststatus_tsujii==0){$("#tsujii_s").attr("class","tsujii_s");}
+			else if(exsiststatus_tsujii==2){$("#tsujii_s2").attr("class","tsujii_s");}
+			
+			$("#img_id_tsujii").attr("class","tsujii_p");
+		
+		}else{$("#img_id_tsujii").attr("class","hide");}
+
+		if(exsistroom_yano==0){
+			
+			if(exsiststatus_yano==0){$("#yano_s").attr("class","yano_s");}
+			else if(exsiststatus_yano==2){$("#yano_s2").attr("class","yano_s");}
+			
+			$("#img_id_yano").attr("class","yano_p");
+		
+		}else{$("#img_id_yano").attr("class","hide");}
+
+
+		if(exsistroom_muramoto==0){
+
+			if(exsiststatus_muramoto==0){$("#muramoto_s").attr("class","muramoto_s");}
+			else if(exsiststatus_muramoto==2){$("#muramoto_s2").attr("class","muramoto_s");}
+			
+			$("#img_id_muramoto").attr("class","muramoto_p");
+		
+		}else{$("#img_id_muramoto").attr("class","hide");}
+
+		if(exsistroom_kotera==0){
+
+			if(exsiststatus_kotera==0){$("#kotera_s").attr("class","kotera_s");}
+			else if(exsiststatus_kotera==2){$("#kotera_s2").attr("class","kotera_s");}
+			
+			$("#img_id_kotera").attr("class","kotera_p");
+		
+		}else{$("#img_id_kotera").attr("class","hide");}
+
+
+		if(exsistroom_imairi==0){
+
+			if(exsiststatus_imairi==0){$("#imairi_s").attr("class","imairi_s");}
+			else if(exsiststatus_imairi==2){$("#imairi_s2").attr("class","imairi_s");}
+			
+			$("#img_id_imairi").attr("class","imairi_p");
+		
+		}else{$("#img_id_imairi").attr("class","hide");}
+
+		if(exsistroom_yamashita==0){
+
+			if(exsiststatus_yamashita==0){$("#yamashita_s").attr("class","yamashita_s");}
+			else if(exsiststatus_yamashita==2){$("#yamashita_s2").attr("class","yamashita_s");}
+			
+			$("#img_id_yamashita").attr("class","yamashita_p");
+		
+		}else{$("#img_id_yamashita").attr("class","hide");}
+
+
+		if(exsistroom_ishikawa==0){
+
+			if(exsiststatus_ishikawa==0){$("#ishikawa_s").attr("class","ishikawa_s");}
+			else if(exsiststatus_ishikawa==2){$("#ishikawa_s2").attr("class","ishikawa_s");}
+			
+			$("#img_id_ishikawa").attr("class","ishikawa_p");
+		
+		}else{$("#img_id_ishikawa").attr("class","hide");}
+
+		if(exsistroom_kitahara==0){
+
+			if(exsiststatus_kitahara==0){$("#kitahara_s").attr("class","kitahara_s");}
+			else if(exsiststatus_kitahara==2){$("#kitahara_s2").attr("class","kitahara_s");}
+			
+			$("#img_id_kitahara").attr("class","kitahara_p");
+		
+		}else{$("#img_id_kitahara").attr("class","hide");}
+
+
+		if(exsistroom_yoneshige==0){
+
+			if(exsiststatus_yoneshige==0){$("#yoneshige_s").attr("class","yoneshige_s");}
+			else if(exsiststatus_yoneshige==2){$("#yoneshige_s2").attr("class","yoneshige_s");}
+			
+			$("#img_id_yoneshige").attr("class","yoneshige_p");
+		
+		}else{$("#img_id_yoneshige").attr("class","hide");}
+
+
+		if(exsistroom_yamada==0){
+
+			if(exsiststatus_yamada==0){$("#yamada_s").attr("class","yamada_s");}
+			else if(exsiststatus_yamada==2){$("#yamada_s2").attr("class","yamada_s");}
+			
+			$("#img_id_yamada").attr("class","yamada_p");
+		
+		}else{$("#img_id_yamada").attr("class","hide");}
+
+
+		if(exsistroom_tamura==0){
+
+			if(exsiststatus_tamura==0){$("#tamura_s").attr("class","tamura_s");}
+			else if(exsiststatus_tamura==2){$("#tamura_s2").attr("class","tamura_s");}
+			
+			$("#img_id_tamura").attr("class","tamura_p");
+		
+		}else{$("#img_id_tamura").attr("class","hide");}
+
+		if(exsistroom_watanabe==0){
+
+			if(exsiststatus_watanabe==0){$("#watanabe_s").attr("class","watanabe_s");}
+			else if(exsiststatus_watanabe==2){$("#watanabe_s2").attr("class","watanabe_s");}
+			
+			$("#img_id_watanabe").attr("class","watanabe_p");
+		
+		}else{$("#img_id_watanabe").attr("class","hide");}
+
+
+		if(exsistroom_sakai==0){
+
+			if(exsiststatus_sakai==0){$("#sakai_s").attr("class","sakai_s");}
+			else if(exsiststatus_sakai==2){$("#sakai_s2").attr("class","sakai_s");}
+			
+			$("#img_id_sakai").attr("class","sakai_p");
+		
+		}else{$("#img_id_sakai").attr("class","hide");}
+
+		if(exsistroom_nomura==0){
+
+			if(exsiststatus_nomura==0){$("#nomura_s").attr("class","nomura_s");}
+			else if(exsiststatus_nomura==2){$("#nomura_s2").attr("class","nomura_s");}
+			
+			$("#img_id_nomura").attr("class","nomura_p");
+		
+		}else{$("#img_id_nomura").attr("class","hide");}
+
+
+
+	}//研究室
+
+	 if(no==4){//会議室ボタンが押された時の処琁E
+
+			$("#back_kari,#back_i,#back_s,#back_l,#back_n,#deskb_p,#deskf_p").attr("class","hide");//仮TOPの背景を消して
+
+			$("#back_204").attr("class","back_g");//会議室の背景表示
+
+
+			$("#kobatake_s,#kobatake_s2,#ookubo_s,#ookubo_s2,#fujii_s,#fujii_s2,#nobuta_s,#nobuta_s2,#tsujii_s,#tsujii_s2,#yano_s,#yano_s2").attr("class","hide");
+
+			$("#muramoto_s,#muramoto_s2,#kotera_s,#kotera_s2,#imairi_s,#imairi_s2,#yamashita_s,#yamashita_s2,#ishikawa_s,#ishikawa_s2,#kitahara_s,#kitahara_s2").attr("class","hide");
+
+			$("#yoneshige_s,#yoneshige_s2,#yamada_s,#yamada_s2,#tamura_s,#tamura_s2,#watanabe_s,#watanabe_s2,#sakai_s,#sakai_s2").attr("class","hide");
+			//スチE�Eタス消去
+
+
+			document.bgColor = "#000000";
+
+		if(exsistroom_kobatake==1){//
+			
+			if(exsiststatus_kobatake==0){$("#kobatake_s").attr("class","kobatake_s");}
+			else if(exsiststatus_kobatake==2){$("#kobatake_s2").attr("class","kobatake_s");}
+			
+			$("#img_id_kobatake").attr("class","kobatake_p");
+			
+		}else{$("#img_id_kobatake").attr("class","hide");}
+
+
+		if(exsistroom_ookubo==1){
+
+			if(exsiststatus_ookubo==0){$("#ookubo_s").attr("class","ookubo_s");}
+			else if(exsiststatus_ookubo==2){$("#ookubo_s2").attr("class","ookubo_s");}			
+			$("#img_id_ookubo").attr("class","ookubo_p");
+		
+		}else{$("#img_id_ookubo").attr("class","hide");}
+
+		
+		if(exsistroom_fujii==1){
+
+			if(exsiststatus_fujii==0){$("#fujii_s").attr("class","fujii_s");}
+			else if(exsiststatus_fujii==2){$("#fujii_s2").attr("class","fujii_s");}
+			
+			$("#img_id_fujii").attr("class","fujii_p");
+		
+		}else{$("#img_id_fujii").attr("class","hide");}
+
+
+		if(exsistroom_nobuta==1){
+
+			if(exsiststatus_nobuta==0){$("#nobuta_s").attr("class","nobuta_s");}
+			else if(exsiststatus_nobuta==2){$("#nobuta_s2").attr("class","nobuta_s");}
+			
+			$("#img_id_nobuta").attr("class","nobuta_p");
+		
+		}else{$("#img_id_nobuta").attr("class","hide");}
+
+
+		if(exsistroom_tsujii==1){
+
+			if(exsiststatus_tsujii==0){$("#tsujii_s").attr("class","tsujii_s");}
+			else if(exsiststatus_tsujii==2){$("#tsujii_s2").attr("class","tsujii_s");}
+			
+			$("#img_id_tsujii").attr("class","tsujii_p");
+
+		
+		}else{$("#img_id_tsujii").attr("class","hide");}
+
+
+		if(exsistroom_yano==1){
+
+			if(exsiststatus_yano==0){$("#yano_s").attr("class","yano_s");}
+			else if(exsiststatus_yano==2){$("#yano_s2").attr("class","yano_s");}
+			
+			$("#img_id_yano").attr("class","yano_p");
+		
+		}else{$("#img_id_yano").attr("class","hide");}
+
+
+		if(exsistroom_muramoto==1){
+
+			if(exsiststatus_muramoto==0){$("#muramoto_s").attr("class","muramoto_s");}
+			else if(exsiststatus_muramoto==2){$("#muramoto_s2").attr("class","muramoto_s");}
+			
+			$("#img_id_muramoto").attr("class","muramoto_p");
+		
+		}else{$("#img_id_muramoto").attr("class","hide");}
+
+
+		if(exsistroom_kotera==1){
+
+			if(exsiststatus_kotera==0){$("#kotera_s").attr("class","kotera_s");}
+			else if(exsiststatus_kotera==2){$("#kotera_s2").attr("class","kotera_s");}
+			
+			$("#img_id_kotera").attr("class","kotera_p");
+		
+		}else{$("#img_id_kotera").attr("class","hide");}
+
+
+		if(exsistroom_imairi==1){
+
+			if(exsiststatus_imairi==0){$("#imairi_s").attr("class","imairi_s");}
+			else if(exsiststatus_imairi==2){$("#imairi_s2").attr("class","imairi_s");}
+			
+			$("#img_id_imairi").attr("class","imairi_p");
+		
+		}else{$("#img_id_imairi").attr("class","hide");}
+
+		if(exsistroom_yamashita==1){
+
+			if(exsiststatus_yamashita==0){$("#yamashita_s").attr("class","yamashita_s");}
+			else if(exsiststatus_yamashita==2){$("#yamashita_s2").attr("class","yamashita_s");}
+			
+			$("#img_id_yamashita").attr("class","yamashita_p");
+		
+		}else{$("#img_id_yamashita").attr("class","hide");}
+
+		if(exsistroom_ishikawa==1){
+
+			if(exsiststatus_ishikawa==0){$("#ishikawa_s").attr("class","ishikawa_s");}
+			else if(exsiststatus_ishikawa==2){$("#ishikawa_s2").attr("class","ishikawa_s");}
+			
+			$("#img_id_ishikawa").attr("class","ishikawa_p");
+		
+		}else{$("#img_id_ishikawa").attr("class","hide");}
+
+
+		if(exsistroom_kitahara==1){
+
+			if(exsiststatus_kitahara==0){$("#kitahara_s").attr("class","kitahara_s");}
+			else if(exsiststatus_kitahara==2){$("#kitahara_s2").attr("class","kitahara_s");}
+			
+			$("#img_id_kitahara").attr("class","kitahara_p");
+		
+		}else{$("#img_id_kitahara").attr("class","hide");}
+
+		if(exsistroom_yoneshige==1){
+
+			if(exsiststatus_yoneshige==0){$("#yoneshige_s").attr("class","yoneshige_s");}
+			else if(exsiststatus_yoneshige==2){$("#yoneshige_s2").attr("class","yoneshige_s");}
+			
+			$("#img_id_yoneshige").attr("class","yoneshige_p");
+		
+		}else{$("#img_id_yoneshige").attr("class","hide");}
+
+
+		if(exsistroom_yamada==1){
+
+			if(exsiststatus_yamada==0){$("#yamada_s").attr("class","yamada_s");}
+			else if(exsiststatus_yamada==2){$("#yamada_s2").attr("class","yamada_s");}
+			
+			$("#img_id_yamada").attr("class","yamada_p");
+		
+		}else{$("#img_id_yamada").attr("class","hide");}
+
+		if(exsistroom_tamura==1){
+
+			if(exsiststatus_tamura==0){$("#tamura_s").attr("class","tamura_s");}
+			else if(exsiststatus_tamura==2){$("#tamura_s2").attr("class","tamura_s");}
+			
+			$("#img_id_tamura").attr("class","tamura_p");
+		
+		}else{$("#img_id_tamura").attr("class","hide");}
+
+		if(exsistroom_watanabe==1){
+
+			if(exsiststatus_watanabe==0){$("#watanabe_s").attr("class","watanabe_s");}
+			else if(exsiststatus_watanabe==2){$("#watanabe_s2").attr("class","watanabe_s");}
+			
+			$("#img_id_watanabe").attr("class","watanabe_p");
+		
+		}else{$("#img_id_watanabe").attr("class","hide");}
+
+		if(exsistroom_sakai==1){
+
+			if(exsiststatus_sakai==0){$("#sakai_s").attr("class","sakai_s");}
+			else if(exsiststatus_sakai==2){$("#sakai_s2").attr("class","sakai_s");}
+			
+			$("#img_id_sakai").attr("class","sakai_p");
+		
+		}else{$("#img_id_sakai").attr("class","hide");}
+
+
+		if(exsistroom_nomura==1){
+
+			if(exsiststatus_nomura==0){$("#nomura_s").attr("class","nomura_s");}
+			else if(exsiststatus_nomura==2){$("#nomura_s2").attr("class","nomura_s");}
+			
+			$("#img_id_nomura").attr("class","nomura_p");
+		
+		}else{$("#img_id_nomura").attr("class","hide");}
+
+
+
+	
+	}//会議室
+
+          if(no==3){//ITSKY3ボタンが押された時の処琁E
+			$("#back_kari,#back_204,#back_l,#back_s,#back_n,#deskb_p,#deskf_p").attr("class","hide");//背景を消去
+
+
+			$("#img_id_fujii,#img_id_nobuta,#img_id_tsujii,#img_id_yano,#img_id_muramoto,#img_id_kotera,#img_id_imairi,#img_id_kitahara,#img_id_watanabe,#img_id_sakai,#img_id_nomura").attr("class","hide");
+			//人物消去
+
+			$("#kobatake_s,#kobatake_s2,#ookubo_s,#ookubo_s2,#fujii_s,#fujii_s2,#nobuta_s,#nobuta_s2,#tsujii_s,#tsujii_s2,#yano_s,#yano_s2").attr("class","hide");
+
+			$("#muramoto_s,#muramoto_s2,#kotera_s,#kotera_s2,#imairi_s,#imairi_s2,#yamashita_s,#yamashita_s2,#ishikawa_s,#ishikawa_s2,#kitahara_s,#kitahara_s2").attr("class","hide");
+
+			$("#yoneshige_s,#yoneshige_s2,#yamada_s,#yamada_s2,#tamura_s,#tamura_s2,#watanabe_s,#watanabe_s2,#sakai_s,#sakai_s2").attr("class","hide");
+			//スチE�Eタス消去
+
+			$("#back_i").attr("class","back_g");//ITSKY3の背景表示
+			document.bgColor = "#000000";
+
+
+
+		if(exsistroom_kobatake==0 || exsistroom_kobatake==1){
+		
+			if(exsiststatus_kobatake==0){$("#kobatake_s").attr("class","kobatake_s");}
+			else if(exsiststatus_kobatake==2){$("#kobatake_s2").attr("class","kobatake_s");}
+
+		$("#img_id_kobatake").attr("class","kobatake_p");
+	
+		}else{$("#img_id_kobatake").attr("class","hide");}
+
+
+		if(exsistroom_ookubo==0 || exsistroom_ookubo==1){
+
+			if(exsiststatus_ookubo==0){$("#ookubo_s").attr("class","ookubo_s");}
+			else if(exsiststatus_ookubo==2){$("#ookubo_s2").attr("class","ookubo_s");}
+			
+			$("#img_id_ookubo").attr("class","ookubo_p");
+		
+		}else{$("#img_id_ookubo").attr("class","hide");}
+
+
+		if(exsistroom_yamashita==0 || exsistroom_yamashita==1){
+
+			if(exsiststatus_yamashita==0){$("#yamashita_s").attr("class","yamashita_s");}
+			else if(exsiststatus_yamashita==2){$("#yamashita_s2").attr("class","yamashita_s");}
+			
+			$("#img_id_yamashita").attr("class","yamashita_p");
+		
+		}else{$("#img_id_yamashita").attr("class","hide");}
+
+		if(exsistroom_ishikawa==0 || exsistroom_ishikawa==1){
+
+
+			if(exsiststatus_ishikawa==0){$("#ishikawa_s").attr("class","ishikawa_s");}
+			else if(exsiststatus_ishikawa==2){$("#ishikawa_s2").attr("class","ishikawa_s");}
+			
+			$("#img_id_ishikawa").attr("class","ishikawa_p");
+		
+		}else{$("#img_id_ishikawa").attr("class","hide");}
+
+
+		if(exsistroom_yoneshige==0 || exsistroom_yoneshige==1){
+
+			if(exsiststatus_yoneshige==0){$("#yoneshige_s").attr("class","yoneshige_s");}
+			else if(exsiststatus_yoneshige==2){$("#yoneshige_s2").attr("class","yoneshige_s");}
+			
+			$("#img_id_yoneshige").attr("class","yoneshige_p");
+		
+		}else{$("#img_id_yoneshige").attr("class","hide");}
+
+
+		if(exsistroom_yamada==0 || exsistroom_yamada==1){
+
+			if(exsiststatus_yamada==0){$("#yamada_s").attr("class","yamada_s");}
+			else if(exsiststatus_yamada==2){$("#yamada_s2").attr("class","yamada_s");}
+			
+			$("#img_id_yamada").attr("class","yamada_p");
+		
+		}else{$("#img_id_yamada").attr("class","hide");}
+
+		if(exsistroom_tamura==0 || exsistroom_tamura==1){
+
+			if(exsiststatus_tamura==0){$("#tamura_s").attr("class","tamura_s");}
+			else if(exsiststatus_tamura==2){$("#tamura_s2").attr("class","tamura_s");}
+			
+			$("#img_id_tamura").attr("class","tamura_p");
+		
+		}else{$("#img_id_tamura").attr("class","hide");}
+
+
+	 }//ITSKY3ここまで
+
+          if(no==5){//NIS-Xボタンが押された時の処琁E
+
+			$("#back_kari,#back_204,#back_l,#back_s,#back_i,#deskb_p,#deskf_p").attr("class","hide");//仮TOPの背景を消して
+
+			$("#img_id_kobatake,#img_id_nobuta,#img_id_tsujii,#img_id_yano").attr("class","hide");
+			$("#img_id_muramoto,#img_id_kotera,#img_id_yamashita,#img_id_ishikawa").attr("class","hide");
+			$("#img_id_kitahara,#img_id_yoneshige,#img_id_yamada,#img_id_tamura,#img_id_watanabe").attr("class","hide");
+		
+			$("#kobatake_s,#kobatake_s2,#ookubo_s,#ookubo_s2,#fujii_s,#fujii_s2,#nobuta_s,#nobuta_s2,#tsujii_s,#tsujii_s2,#yano_s,#yano_s2").attr("class","hide");
+
+			$("#muramoto_s,#muramoto_s2,#kotera_s,#kotera_s2,#imairi_s,#imairi_s2,#yamashita_s,#yamashita_s2,#ishikawa_s,#ishikawa_s2,#kitahara_s,#kitahara_s2").attr("class","hide");
+
+			$("#yoneshige_s,#yoneshige_s2,#yamada_s,#yamada_s2,#tamura_s,#tamura_s2,#watanabe_s,#watanabe_s2,#sakai_s,#sakai_s2").attr("class","hide");
+			//スチE�Eタス、人物、背景の消去
+
+			$("#back_n").attr("class","back_g");//NIS-Xの背景表示
+			document.bgColor = "#000000";
+
+		if(exsistroom_imairi==0 || exsistroom_imairi==1){
+
+			if(exsiststatus_imairi==0){$("#imairi_s").attr("class","imairi_s");}
+			else if(exsiststatus_imairi==2){$("#imairi_s2").attr("class","imairi_s");}
+
+		$("#img_id_imairi").attr("class","imairi_p");
+		
+		}else{$("#img_id_imairi").attr("class","hide");}
+
+
+
+		if(exsistroom_fujii==0 || exsistroom_fujii==1){
+
+			if(exsiststatus_fujii==0){$("#fujii_s").attr("class","fujii_s");}
+			else if(exsiststatus_fujii==2){$("#fujii_s2").attr("class","fujii_s");}
+
+		$("#img_id_fujii").attr("class","fujii_p");
+
+			
+		}else{$("#img_id_fujii").attr("class","hide");}
+
+
+		if(exsistroom_ookubo==0 || exsistroom_ookubo==1){
+
+			if(exsiststatus_ookubo==0){$("#ookubo_s").attr("class","ookubo_s");}
+			else if(exsiststatus_ookubo==2){$("#ookubo_s2").attr("class","ookubo_s");}
+			
+			$("#img_id_ookubo").attr("class","ookubo_p");
+		
+		}else{$("#img_id_ookubo").attr("class","hide");}
+
+
+		if(exsistroom_sakai==0 || exsistroom_sakai==1){
+
+			if(exsiststatus_sakai==0){$("#sakai_s").attr("class","sakai_s");}
+			else if(exsiststatus_sakai==2){$("#sakai_s2").attr("class","sakai_s");}
+			
+			$("#img_id_sakai").attr("class","sakai_p");
+		
+		}else{$("#img_id_sakai").attr("class","hide");}
+
+
+
+		if(exsistroom_nomura==0 || exsistroom_nomura==1){
+
+			if(exsiststatus_nomura==0){$("#nomura_s").attr("class","nomura_s");}
+			else if(exsiststatus_nomura==2){$("#nomura_s2").attr("class","nomura_s");}
+			
+			$("#img_id_nomura").attr("class","nomura_p");
+		
+		}else{$("#img_id_nomura").attr("class","hide");}
+
+
+	 }//NIS-Xここまで
+
+ 	if(no==6){document.location = "form.html";}//フォーム画面移勁E
+
+ 	if(no==7){document.location = "http://49.212.200.39/login/login.php";}//矢野君のペ�Eジへ
+			
+                }//success	
+            });//ajax
+		
+        }hyo
+
+
+ --></script>
+
+
+ 
+
+<body bgcolor="#000000">
+
+<p><img src="./img/top.png" class="back_g2" id="back_kari"></p>
+
+<p><img src="./img/KE204.png" class="back_g hide" id="back_204"></p>
+<p><img src="./img/KE205.png" class="back_g hide" id="back_l"></p>
+<p><img src="./img/desk_b.png" class="deskb_p hide" id="deskb_p"></p>
+<p><img src="./img/desk_f.png" class="deskf_p hide" id="deskf_p"></p>
+
+<p><img src="./img/background_s.png" class="back_g hide" id="back_s"></p>
+<p><img src="./img/background_i.png" class="back_g hide" id="back_i"></p>
+<p><img src="./img/background_n.png" class="back_g hide" id="back_n"></p>
+
+
+
+<p><img src="./img/kobatake.png" class="hide" id="img_id_kobatake"></p>
+<p class="hide" id="str_kobatake" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="kobatake_s"></p>
+<p><img src="./img/busy.png" class="hide" id="kobatake_s2"></p>
+
+<p><img src="./img/ookubo.png" class="hide" id="img_id_ookubo"></p>
+<p class="hide" id="str_ookubo" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="ookubo_s"></p>
+<p><img src="./img/busy.png" class="hide" id="ookubo_s2"></p>
+
+
+<p><img src="./img/fujii.png" class="hide" id="img_id_fujii"></p>
+<p class="hide" id="str_fujii" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="fujii_s"></p>
+<p><img src="./img/busy.png" class="hide" id="fujii_s2"></p>
+
+
+<p><img src="./img/nobuta.png" class="hide" id="img_id_nobuta"></p> 
+<p class="hide" id="str_nobuta" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="nobuta_s"></p>
+<p><img src="./img/busy.png" class="hide" id="nobuta_s2"></p>
+
+
+<p><img src="./img/tsujii.png" class="tsujii_p hide" id="img_id_tsujii"></p>
+<p class="hide" id="str_tsujii" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="tsujii_s"></p>
+<p><img src="./img/busy.png" class="hide" id="tsujii_s2"></p>
+
+
+<p><img src="./img/yano.png" class="yano_p hide" id="img_id_yano"></p>
+<p class="hide" id="str_yano" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="yano_s"></p>
+<p><img src="./img/busy.png" class="hide" id="yano_s2"></p>
+
+
+<p><img src="./img/muramoto.png" class="muramoto_p hide" id="img_id_muramoto"></p>
+<p class="hide" id="str_muramoto" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="muramoto_s"></p>
+<p><img src="./img/busy.png" class="hide" id="muramoto_s2"></p>
+
+
+<p><img src="./img/kotera.png" class="kotera_p hide" id="img_id_kotera"></p>
+<p class="hide" id="str_kotera" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="kotera_s"></p>
+<p><img src="./img/busy.png" class="hide" id="kotera_s2"></p>
+
+
+<p><img src="./img/imairi.png" class="imairi_p hide" id="img_id_imairi"></p>
+<p class="hide" id="str_imairi" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="imairi_s"></p>
+<p><img src="./img/busy.png" class="hide" id="imairi_s2"></p>
+
+
+<p><img src="./img/yamashita.png" class="yamashita_p hide" id="img_id_yamashita"></p>
+<p class="hide" id="str_yamashita" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="yamashita_s"></p>
+<p><img src="./img/busy.png" class="hide" id="yamashita_s2"></p>
+
+
+<p><img src="./img/ishikawa.png" class="ishikawa_p hide" id="img_id_ishikawa"></p>
+<p class="hide" id="str_ishikawa" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="ishikawa_s"></p>
+<p><img src="./img/busy.png" class="hide" id="ishikawa_s2"></p>
+
+<p><img src="./img/kitahara.png" class="kitahara_p hide" id="img_id_kitahara"></p>
+<p class="hide" id="str_kitahara" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="kitahara_s"></p>
+<p><img src="./img/busy.png" class="hide" id="kitahara_s2"></p>
+
+
+<p><img src="./img/yoneshige.png" class="yoneshige_p hide" id="img_id_yoneshige"></p>
+<p class="hide" id="str_yoneshige" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="yoneshige_s"></p>
+<p><img src="./img/busy.png" class="hide" id="yoneshige_s2"></p>
+
+
+<p><img src="./img/yamada.png" class="yamada_p hide" id="img_id_yamada"></p>
+<p class="hide" id="str_yamada" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="yamada_s"></p>
+<p><img src="./img/busy.png" class="hide" id="yamada_s2"></p>
+
+
+<p><img src="./img/tamura.png" class="tamura_p hide" id="img_id_tamura"></p>
+<p class="hide" id="str_tamura" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="tamura_s"></p>
+<p><img src="./img/busy.png" class="hide" id="tamura_s2"></p>
+
+
+<p><img src="./img/watanabe.png" class="watanabe_p hide" id="img_id_watanabe"></p>
+<p class="hide" id="str_watanabe" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="watanabe_s"></p>
+<p><img src="./img/busy.png" class="hide" id="watanabe_s2"></p>
+
+<p><img src="./img/sakai.png" class="sakai_p hide" id="img_id_sakai"></p>
+<p class="hide" id="str_sakai" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="sakai_s"></p>
+<p><img src="./img/busy.png" class="hide" id="sakai_s2"></p>
+
+
+<p><img src="./img/nomura.png" class="nomura_p hide" id="img_id_nomura"></p>
+<p class="hide" id="str_nomura" span style="background-color:#000000;color:#ffffff;"></span></p>
+<p><img src="./img/happy.png" class="hide" id="nomura_s"></p>
+<p><img src="./img/busy.png" class="hide" id="nomura_s2"></p>
+
+
+   <input type="image" onClick="hyou(2);" width="120" height="50" src="./img/KE205button.png" />
+   <input type="image" onClick="hyou(4);" width="120" height="50" src="./img/KE204button.png" />
+   <input type="image" onClick="hyou(5);" width="120" height="50" src="./img/nisxbutton.png" />
+   <input type="image" onClick="hyou(1);" width="120" height="50" src="./img/satikobutton.png" />
+   <input type="image" onClick="hyou(3);" width="120" height="50" src="./img/itsky3button.png" />
+   <input type="image" onClick="hyou(6);" width="120" height="50" src="./img/status.png" />
+　 <input type="image" onClick="hyou(7);" width="120" height="50" src="./img/yanobutton.png" />
+
+
+
+</body>
+</html>

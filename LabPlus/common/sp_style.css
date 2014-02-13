@@ -1,0 +1,485 @@
+/* ======================================== */
+/* htmlタグ */
+body,div,pre,p,blockquote, 
+form,
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6, 
+embed,object { 
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline; 
+	font-size: 100.01%;
+}
+
+body {
+	text-align: center;
+	font-size: 16px;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+}
+table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.border {
+  border-collapse:collapse;
+}
+
+table.border tr {
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+a:link { 
+	color:black;
+}
+
+a:hover{
+	color: blue;
+} 
+
+h1 {
+	font-size: 200%;
+	text-align: center;
+	padding: 20px;
+}
+h1 a {
+	color: #444;
+	text-decoration: none;
+}
+h1 a:hover {
+	color: #888;
+	text-decoration: underline;
+}
+h2 {
+	font-size: 200%;
+	margin-bottom: 0.5em;
+}
+p {
+	margin-bottom: 1em;
+}
+
+textarea {
+	resize:none;
+	border:2px solid #A9A9A9;
+	padding: 4px 0;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+input[type="text"],input[type="password"]{
+	font-size: 16px;
+	border:2px solid #A9A9A9;
+	padding: 2px 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"]{
+	background: #CFF76F;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	color: #138000;
+	padding: 3px 10px;
+	margin: 10px;
+	text-decoration: none;
+	text-align: center;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"] {
+	cursor: pointer;
+}
+
+input[type="submit"],input[type="reset"],input[type="button"] {
+	cursor: pointer;
+}
+/* ======================================== */
+/* 常に使う部品 */
+
+/* コンテンツの内容を示す */
+.title{
+	color: #138000;
+	background-color: #CFF76F;
+	padding: 3px;
+	margin: 20px 5px ;
+}
+
+/* メンバーの情報一つ分の枠 */
+.side-msg{
+	background-color: #fff;
+	margin: 8px;
+	padding: 3px 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+/* デザインされた下線１ */
+hr.gradient {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* デザインされた下線２ */
+hr.gradient2 {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/* 背景に斜めのストライプを入れる */
+.horizontal {
+
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	background-size: 10px 10px; /* Controls the size of the stripes */
+
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+			color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent),
+			color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)),
+			color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent),
+			to(transparent));
+	background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+	background-image: linear-gradient(-45deg, rgba(255, 255, 255, .2) 25%, transparent 25%,
+			transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%,
+			transparent 75%, transparent);
+}
+
+/* 一番上のタイトル */
+#main_title{
+	text-align:left;
+	background-color: #fff;
+	width: 750px;
+	float:left;
+	display:block;
+}
+
+#mystatus{
+	display:none;
+}
+
+.info {
+	text-align:left;
+}
+
+/* クエスト一覧のデザイン */
+.quest_paper{
+	height:180px;
+	padding:10px 0;
+	margin: 5px;
+	background-image:url(../img/paper.png);
+	text-align: center;
+	background-color:#fff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-moz-box-shadow: 1px 1px 8px gray;
+	-webkit-box-shadow: 1px 1px 8px gray;
+	box-shadow: 2px 2px 3px gray;
+}
+
+/* カレンダーのデザイン */
+#calendar {
+	width: 420px;
+	font-size: 12px;
+	margin: 0 auto;
+}
+.fc-sun { color: red; }  /* 日曜日 */
+.fc-sat { color: blue; } /* 土曜日 */
+/* ======================================== */
+/* サイトの構造を表すidやclass */
+
+
+#wrap { 
+	text-align:center;
+}
+
+#header{
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+
+#inner {
+	position:absolute;
+	top:0;
+	left:50%;
+	width: 980px;
+	margin-left : -490px ;
+}
+
+#leftWrap {
+	margin:200px 30px 0 0;
+	float:left;
+	width:200px;
+}
+
+#centerWrap {
+	margin:200px 30px 0 0;
+	float:left;
+	width: 450px;
+}
+
+#mainWrap {
+	margin:200px 30px 0 230px;
+	text-align: center;
+	width:450px;
+	float:left;
+}
+
+#sideWrap {
+	width:270px;
+	height:100%;
+	position:relative;
+	float:right;
+	background: #b2ffe4;
+	text-align: center;
+	z-index:2;
+	padding:95px 0 0 0;
+}
+
+/* ========================================*/
+/* マイページのアバター画像関連*/
+.myimg{
+	text-align: center;
+	width: 185px;
+	height: 180px;
+	margin: 10px auto;
+	padding: 15px 0 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.subimg{
+	text-align: center;
+	background-color: #FFBB40;
+	width: 105px;
+	height: 105px;
+	margin: 0 30px 0 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+.team_subimg{
+	text-align: center;
+	background-color: #FFBB40;
+	width: 105px;
+	height: 105px;
+	margin: 0 10px 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.quizimg{
+	text-align: center;
+	width: 135px;
+	height: 135px;
+	margin: 10px auto;
+	padding: 0 5px 0 0;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+img.main{
+	width: 170px;
+	height: 170px;
+}
+
+img.sub{
+	width: 100px;
+	height: 100px;
+}
+
+img.quiz{
+	width: 140px;
+	height: 140px;
+}
+
+
+
+/* ========================================*/
+/*　マイページのお知らせのタブ関連　*/
+#tab{
+	background: #b2ffe4;
+	padding:10px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+ul #tabs{
+	width:100%;
+	box-sizing: border-box;
+}
+#tabs .select {
+	background: #fff;
+	border-top: solid 6px #ff9933;
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-moz-border-radius-bottomright: 0px;
+}
+
+.display_none {
+	display: none;
+}
+
+#tabs li{
+	background: #fff;
+	list-style: none;
+	float: left;
+	padding: 8px 15px 2px;
+	/*border-bottom: solid 6px #a0e5ce;*/
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	margin:0 5px 0 0;
+}
+
+#tabs li a{
+	color: #003399;
+	font-weight:bold;
+	text-decoration: none;
+	outline:none;
+}
+#tabs li a:hover {
+    color: #003399;
+}
+
+.content_wrap {
+	padding: 20px 0;
+	max-height: 250px;
+	background-color: #fff;
+	clear: left;
+	overflow:auto;
+	overflow-y:scroll;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	-moz-border-radius-bottomleft: 8px;
+	-moz-border-radius-bottomright: 8px;
+	border-top-right-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	-moz-border-radius-topright: 8px; 
+}
+
+/* ======================================== */
+/* グローバルナビ関連 */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+
+.nav {
+	clear:left;
+	width: 750px;
+	font-size: 100%;
+	background: #b2ffe4;
+	padding:  0 10px;
+	box-sizing: border-box;
+}
+.nav li {
+	list-style: none;
+	float: left;
+}
+
+
+.nav li a {
+	text-align: center;
+	font-weight:bold;
+	margin: 20px 5px 0 0;
+	padding: 8px 0px;
+	width: 85px;
+	background: #fff;
+	text-decoration: none;
+	color: #003399;
+	display: block;
+	border-top-right-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	-webkit-border-top-left-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+}
+
+.nav li a:hover {
+	margin: 15px 10px 0 0;
+	padding: 8px 8px 13px 8px;
+}
+
+
+
+.selected{
+	border-top: solid 6px #ff9933;
+}
+
+.none_selected{
+	border-top: solid 6px #fff;
+}
+
+/* ======================================== */
+/* 吹き出し作成用 */
+.balloon{
+	position:relative;
+	left:50%;
+	margin: 15px 0 30px -150px;
+	width:300px;
+	height:55px;
+	padding:0px;
+	background-color:#fff;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border:solid;
+	border-color:#CFF76F;
+}
+
+.question{
+    content: "Question"; 
+    position: relative;  
+    width:74px;  
+    height: 20px;
+    left: 30px;
+    top: -13px;
+    background-color: #fff;
+z-index:1;
+    }
+
+.question_content{
+display:box;
+margin: -3px 0 0 0;
+}
+

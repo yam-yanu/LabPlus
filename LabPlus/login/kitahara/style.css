@@ -1,0 +1,356 @@
+.hide {display:none;}
+
+.back_g    {
+    position:    absolute;
+    z-index:    0;
+    top:        100px;
+    left:        80px;
+
+}
+
+.back_g2    {
+    position:    absolute;
+    z-index:    0;
+    top:        120px;
+    left:        90px;
+
+}
+
+.deskb_p    {
+    position:    absolute;
+    z-index:    5;
+    top:        100px;
+    left:        80px;
+
+}
+
+.deskf_p    {
+    position:    absolute;
+    z-index:    14;
+    top:        100px;
+    left:        80px;
+
+}
+
+.fujii_p    {
+    position:    absolute;
+    z-index:    6;
+    top:        250px;
+    left:        740px;
+
+}
+
+.fujii_s    {
+    position:    absolute;
+    z-index:    5;
+    top:        250px;
+    left:        790px;
+
+}
+
+.yamashita_p    {
+    position:    absolute;
+    z-index:    8;
+    top:        280px;
+    left:        795px;
+
+}
+
+.yamashita_s    {
+    position:    absolute;
+    z-index:    7;
+    top:        280px;
+    left:        855px;
+
+}
+
+.kobatake_p   {
+    position:    absolute;
+    z-index:    18;
+    top:        440px;
+    left:        370px;
+
+}
+
+.kobatake_s   {
+    position:    absolute;
+    z-index:    18;
+    top:        450px;
+    left:        430px;
+
+}
+
+.kitahara_p   {
+    position:    absolute;
+    z-index:    17;
+    top:        400px;
+    left:        300px;
+
+}
+
+.kitahara_s   {
+    position:    absolute;
+    z-index:    17;
+    top:        400px;
+    left:        360px;
+
+}
+
+
+.nobuta_p    {
+    position:    absolute;
+    z-index:    2;
+    top:        180px;
+    left:        600px;
+
+}
+
+.nobuta_s    {
+    position:    absolute;
+    z-index:    1;
+    top:        180px;
+    left:        660px;
+
+}
+
+.watanabe_p    {
+    position:    absolute;
+    z-index:    4;
+    top:        210px;
+    left:        670px;
+
+}
+
+.watanabe_s    {
+    position:    absolute;
+    z-index:    3;
+    top:        210px;
+    left:        720px;
+
+}
+
+
+.ookubo_p    {
+    position:    absolute;
+    z-index:    18;
+    top:        170px;
+    left:        350px;
+
+}
+
+.ookubo_s    {
+    position:    absolute;
+    z-index:    17;
+    top:        170px;
+    left:        400px;
+
+}
+
+.tsujii_p   {
+    position:    absolute;
+    z-index:    19;
+    top:        480px;
+    left:        440px;
+
+}
+
+.tsujii_s   {
+    position:    absolute;
+    z-index:    19;
+    top:        480px;
+    left:        490px;
+
+}
+
+.yano_p   {
+    position:    absolute;
+    z-index:    32;
+    top:        360px;
+    left:        230px;
+
+}
+
+
+.yano_s   {
+    position:    absolute;
+    z-index:    31;
+    top:        360px;
+    left:        290px;
+
+}
+
+.muramoto_p   {
+    position:    absolute;
+    z-index:    30;
+    top:        330px;
+    left:        170px;
+
+}
+
+.muramoto_s   {
+    position:    absolute;
+    z-index:    29;
+    top:        330px;
+    left:        230px;
+
+}
+
+.kotera_p   {
+    position:    absolute;
+    z-index:    20;
+    top:        250px;
+    left:        330px;
+
+}
+
+.kotera_s   {
+    position:    absolute;
+    z-index:    19;
+    top:        250px;
+    left:        390px;
+
+}
+
+
+
+.imairi_p   {
+    position:    absolute;
+    z-index:    22;
+    top:        290px;
+    left:        400px;
+
+}
+
+
+.imairi_s   {
+    position:    absolute;
+    z-index:    21;
+    top:        290px;
+    left:        450px;
+
+}
+
+.yoneshige_p   {
+    position:    absolute;
+    z-index:    24;
+    top:        330px;
+    left:        470px;
+
+}
+
+.yoneshige_s   {
+    position:    absolute;
+    z-index:    23;
+    top:        330px;
+    left:        520px;
+
+}
+
+.yamada_p   {
+    position:    absolute;
+    z-index:    26;
+    top:        350px;
+    left:        520px;
+
+}
+
+.yamada_s   {
+    position:    absolute;
+    z-index:    25;
+    top:        350px;
+    left:        580px;
+
+}
+
+.tamura_p   {
+    position:    absolute;
+    z-index:    28;
+    top:        380px;
+    left:        580px;
+
+}
+
+.tamura_s   {
+    position:    absolute;
+    z-index:    27;
+    top:        380px;
+    left:        630px;
+
+}
+
+.ishikawa_p   {
+    position:    absolute;
+    z-index:    12;
+    top:        260px;
+    left:        470px;
+
+}
+
+.ishikawa_s   {
+    position:    absolute;
+    z-index:    11;
+    top:        260px;
+    left:        520px;
+
+}
+
+.sakai_p   {
+    position:    absolute;
+    z-index:    14;
+    top:        310px;
+    left:        580px;
+
+}
+
+.sakai_s   {
+    position:    absolute;
+    z-index:    13;
+    top:        310px;
+    left:        640px;
+
+}
+
+.nomura_p   {
+    position:    absolute;
+    z-index:    8;
+    top:        350px;
+    left:        635px;
+
+}
+
+
+.nomura_s   {
+    position:    absolute;
+    z-index:    8;
+    top:        350px;
+    left:        705px;
+
+}
+
+.shen_p   {
+    position:    absolute;
+    z-index:    10;
+    top:        350px;
+    left:        635px;
+
+}
+
+.shen_s   {
+    position:    absolute;
+    z-index:    9;
+    top:        350px;
+    left:        705px;
+
+}
+
+
+
+.text-area {
+
+ background-color: #fff;
+ opacity: 0.8;
+}
+
+
+
+
